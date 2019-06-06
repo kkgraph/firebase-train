@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--jQUERY-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!--header-->
+    <div class="jumbotron jumbotron-fluid my-3 bg-success">
+        <div class="container bg-light border border-success">
+              <h1 class="display-4">Find Train</h1>
+              <p class="lead">Find your train time, quick and simple!</p>
+        </div>
+    </div>
+
+    <!--train schedule table-->
+    <table class="table table-bordered">
+        <thead class="bg-success">
+          <tr>
+            <th scope="col">Name of Train</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Frequency (mins)</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Mins Away</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">X</th>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <!--input form for train-->
+    <table class="table table-bordered">
+        <thead class="bg-success">
+            <tr>
+                <th scope="col">Add Train</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <form>
+                        <div class="form-group">
+                            <label for="trainName">Train Name </label>
+                            <input type="input" class="form-control" id="trainName"  placeholder="Enter train name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dest">Destination</label>
+                            <input type="input" class="form-control" id="dest" placeholder="Enter city">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstTrain">First Train (HH:mm)</label>
+                            <input type="input" class="form-control" id="firstTrain" placeholder="Enter in military time">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="frequency">Frequency (mins)</label>
+                            <input type="input" class="form-control" id="freq" placeholder="mins">
+                        </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                 </form>
+              </td>
+            </tbody>
+        </table>
+</div>
+    
+</body>
+</html>
