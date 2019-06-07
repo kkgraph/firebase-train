@@ -9,13 +9,6 @@
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!--jQUERY-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
-
-    <!-- Added Moment JS -->
-  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
-
 </head>
 <body>
 
@@ -40,14 +33,14 @@
             <th scope="col">Mins Away</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
+        <tbody class="trainTable">
+          <!-- <tr>
             <th scope="row">X</th>
             <td>X</td>
             <td>X</td>
             <td>X</td>
             <td>X</td>
-          </tr>
+          </tr> -->
         </tbody>
     </table>
 
@@ -63,30 +56,43 @@
                 <td>
                     <form>
                         <div class="form-group">
-                            <label for="trainName">Train Name </label>
+                            <label for="inputTrainName">Train Name </label>
                             <input type="text" class="form-control" id="trainName"  placeholder="Enter train name">
                         </div>
 
                         <div class="form-group">
-                            <label for="dest">Destination</label>
+                            <label for="inputDest">Destination</label>
                             <input type="text" class="form-control" id="dest" placeholder="Enter city">
                         </div>
 
                         <div class="form-group">
-                            <label for="firstTrain">First Train (HH:mm)</label>
+                            <label for="inputFirstTrain">First Train (HH:mm)</label>
                             <input type="text" class="form-control" id="firstTrain" placeholder="Enter in military time">
                         </div>
 
                         <div class="form-group">
-                            <label for="frequency">Frequency (mins)</label>
+                            <label for="inputFrequency">Frequency (mins)</label>
                             <input type="text" class="form-control" id="freq" placeholder="mins">
                         </div>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btnTrain btn btn-success">Submit</button>
                  </form>
               </td>
             </tbody>
         </table>
 </div>
-    
+
+<!-- jquery Link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <!-- Moment Library Link -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
+
+<!--Logic -->
+<script type="text/javascript" src="logic.js"></script>
+
 </body>
 </html>
